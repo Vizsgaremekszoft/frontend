@@ -2,23 +2,16 @@
   <div class="container">
 
     <a class="navbar-brand" routerLink="/home">
-       <img src="/scissors.png" alt="szalonlogo" class="logo">
+      <img src="/scissors.png" alt="szalonlogo" class="logo">
     </a>
     <!-- Mobilon a menü gomb-->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarMenu"
-      aria-controls="navbarMenu"
-      aria-expanded="false"
-      aria-label="Menü megnyitása">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Menü megnyitása">
 
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center"
-         id="navbarMenu">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
 
       <div class="navbar-nav">
         <a routerLink="/home" class="nav-link">Kezdőlap</a>
@@ -33,6 +26,5 @@
   </div>
 </nav>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+
+<router-outlet></router-outlet>

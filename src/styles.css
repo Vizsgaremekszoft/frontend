@@ -1,5 +1,13 @@
 @import 'bootstrap';
 
+html,body{
+    min-height: 100%;
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    background-color: #F8F5EF;
+}
 .salon-nav {
     background-color: #E8D8C8;
     padding: 15px;
@@ -25,7 +33,6 @@
     color: #A47768;
 }
 
-/* Hamburger ikon */
 .navbar-toggler {
     border-color: #3B302C;
 }
@@ -34,7 +41,8 @@
     box-shadow: none;
 }
 
-/* Mobil nézet */
+
+/*mobil*/
 @media (max-width: 767px) {
     .navbar-nav {
         gap: 5px;
