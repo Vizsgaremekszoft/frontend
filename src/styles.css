@@ -1,0 +1,79 @@
+@import 'bootstrap';
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #459496;
+}
+
+/* Navigáció */
+.salon-nav {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Belső tartalom */
+.salon-nav .container-fluid {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Logó */
+.logo {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+}
+
+/* Menü */
+.navbar-nav {
+    gap: 25px;
+    border-radius: 0 0 25px 25px;
+}
+
+.nav-link {
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #730202cb;
+}
+
+.navbar-toggler {
+    border-color: #000000;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+    .salon-nav {
+        padding: 10px 15px;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 10px;
+    }
+}

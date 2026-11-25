@@ -1,0 +1,226 @@
+.about-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 5% 80px 5%;
+    box-sizing: border-box;
+    color: #1e2424;
+}
+
+/* Felső hero rész */
+.about-hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.about-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 440px;
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(26, 132, 134, 0.15);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    background-color: #1a8486;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-intro {
+    flex: 1.2;
+}
+
+.tag {
+    display: inline-block;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #861a1a;
+    margin-bottom: 15px;
+}
+
+.about-intro h1 {
+    font-family: Georgia, serif;
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: #000000;
+}
+
+.highlight {
+    color: #ee0000;
+}
+
+.lead-text {
+    font-size: 18px;
+    line-height: 1.65;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.sub-text {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #000000;
+    margin-bottom: 28px;
+}
+
+/* Specialitás címkék */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-pill {
+    background-color: #eef7f7;
+    color: #1a8486;
+    border: 1px solid #cce7e7;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Bento kártyák */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.bento-card {
+    background-color: #f7f9f9;
+    border: 1px solid #e6eded;
+    border-radius: 25px;
+    padding: 32px;
+    transition: transform 0.3s ease;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+}
+
+.bento-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+.bento-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+}
+
+/* Kiemelt türkiz kártya */
+.accent-card {
+    background-color: #1a8486;
+    color: #ffffff;
+    border: none;
+}
+
+.accent-card h2 {
+    font-size: 46px;
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+}
+
+.accent-card p {
+    color: #e8f5f5;
+}
+
+/* Alsó CTA doboz */
+.about-cta {
+    background-color: #111616;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-cta h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.about-cta p {
+    color: #cccccc;
+    margin: 0;
+    font-size: 16px;
+}
+
+.cta-button {
+    background-color: #1a8486;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #1a8486;
+}
+
+/* Mobil és tablet nézet */
+@media (max-width: 991px) {
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-image-wrapper {
+        max-width: 100%;
+    }
+
+    .about-image-wrapper img {
+        height: 380px;
+    }
+
+    .experience-badge {
+        right: 15px;
+    }
+
+    .skills-tags {
+        justify-content: center;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 25px;
+    }
+}

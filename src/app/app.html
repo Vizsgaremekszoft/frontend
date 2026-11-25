@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md salon-nav">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" routerLink="/home">
+      <img src="/bphair.png" alt="szalonlogo" class="logo">
+    </a>
+    <!-- Mobilon a menü gomb-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Menü megnyitása">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+
+      <div class="navbar-nav">
+        <a routerLink="/home" class="nav-link">Kezdőlap</a>
+        <a routerLink="/service" class="nav-link">Szolgáltatások</a>
+        <a routerLink="/price" class="nav-link">Árak</a>
+        <a routerLink="/review" class="nav-link">Vélemények</a>
+        <a routerLink="/about" class="nav-link">Rólam</a>
+        <a routerLink="/reserve" class="nav-link">Időpontfoglalás</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
