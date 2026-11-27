@@ -1,1 +1,100 @@
-<p>services works!</p>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Rövid</th>
+            <th>Közepes</th>
+            <th>Hosszú</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (ser of services() ; track ser.id){
+            @if(ser.stype == "női"){
+        <tr>
+            <td>{{ser.name}}</td>
+        </tr>
+        }
+        }
+    </tbody>
+</table>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+            <th>Árak</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (ser of services() ; track ser.id){
+            @if(ser.stype == "férfi"){
+        <tr>
+            <td>{{ser.name}}</td>
+            <td>{{ser.description}}</td>
+            <td>{{ser.price}}</td>
+        </tr>
+        }
+        }
+    </tbody>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+            <th>Árak</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (ser of services() ; track ser.id){
+            @if(ser.stype == "alkalmi"){
+        <tr>
+            <td>{{ser.name}}</td>
+            <td>{{ser.description}}</td>
+            <td>{{ser.price}}</td>
+        </tr>
+        }
+        }
+    </tbody>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+            <th>Árak</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (ser of services() ; track ser.id){
+            @if(ser.stype == "festés"){
+        <tr>
+            <td>{{ser.name}}</td>
+            <td>{{ser.description}}</td>
+            <td>{{ser.price}}</td>
+        </tr>
+        }
+        }
+    </tbody>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Leírás</th>
+            <th>Árak</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (ser of services() ; track ser.id){
+            @if(ser.stype == "fonás"){
+        <tr>
+            <td>{{ser.name}}</td>
+            <td>{{ser.description}}</td>
+            <td>{{ser.price}}</td>
+        </tr>
+        }
+        }
+    </tbody>
+    
+
+
+</table>
